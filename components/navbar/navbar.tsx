@@ -1,13 +1,16 @@
 import React from "react";
 import { User, ShoppingCart } from "lucide-react";
-import MobileNavbar from "./mobile-navbar";
+import MobileNavbar from "./mobile-navbar/mobile-navbar";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <nav className="btwMdLg:w-screen w-screen h-[80px] bg-[#F5F5F5] fixed top-0 z-50">
       <div className="max-w-6xl mx-auto h-full flex items-center justify-between p-4">
         <div className="flex items-center">
-          <h1 className="text-[#CF772F] text-2xl ">beije.</h1>
+          <Link className="text-[#CF772F] text-2xl " href="/">
+            beije.
+          </Link>
         </div>
         <div className="btwMdLg:block hidden">
           <div className="flex gap-10 tracking-[-0.01em] text-[1.10rem]  leading-7">
