@@ -29,8 +29,17 @@ export const beijeTamponSlice = createSlice({
     updateSuperTampon: (state, action: PayloadAction<number>) => {
       state.beije_tampon.super_tampon += action.payload;
     },
+    resetTamponPed: (state) => {
+      (state.beije_tampon.mini_tampon = 0),
+        (state.beije_tampon.standart_tampon = 0),
+        (state.beije_tampon.super_tampon = 0);
+    },
   },
 });
 
-export const { updateMiniTampon, updateStandartTampon, updateSuperTampon } =
-  beijeTamponSlice.actions;
+export const {
+  updateMiniTampon,
+  updateStandartTampon,
+  updateSuperTampon,
+  resetTamponPed,
+} = beijeTamponSlice.actions;

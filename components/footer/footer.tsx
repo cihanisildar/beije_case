@@ -13,7 +13,7 @@ import { Separator } from "../ui/separator";
 import Image from "next/image";
 import { americanExpressCard, masterCard, troyCard, visaCard } from "@/images";
 
-const FooterTest = () => {
+const Footer = () => {
   return (
     <div className="w-screen bg-[#262626] flex flex-col btwMdLg:grid btwMdLg:grid-cols-12 px-10 btwMdLg:px-[144px] py-[60px]">
       <div className="col-start-1 col-end-5  flex flex-col gap-5  text-[#FFFFFFB2] btwMdLg:col-span-5 md:col-span-3">
@@ -126,4 +126,4 @@ const FooterTest = () => {
   );
 };
 
-export default FooterTest;
+export default Footer;

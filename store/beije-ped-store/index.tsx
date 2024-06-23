@@ -16,7 +16,7 @@ const initialState: BeijePedType = {
   },
 };
 
-export const beijePedSlice  = createSlice({
+export const beijePedSlice = createSlice({
   name: "beijePed",
   initialState,
   reducers: {
@@ -29,7 +29,13 @@ export const beijePedSlice  = createSlice({
     updateSuperPlusPed: (state, action: PayloadAction<number>) => {
       state.beije_ped.super_plus_ped += action.payload;
     },
+    resetPed: (state) => {
+      (state.beije_ped.standart_ped = 0),
+        (state.beije_ped.super_ped = 0),
+        (state.beije_ped.super_plus_ped = 0);
+    },
   },
 });
 
-export const { updateStandartPed, updateSuperPed, updateSuperPlusPed } = beijePedSlice.actions;
+export const { updateStandartPed, updateSuperPed, updateSuperPlusPed, resetPed } =
+  beijePedSlice.actions;

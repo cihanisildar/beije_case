@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { StoreProvider } from "@/store/StoreProvider";
 import Navbar from "@/components/navbar/navbar";
@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html lang="en">
-        <body>
+        <body className="overflow-x-hidden">
           <Navbar />
-          {children}
+          <main className="mt-[80px]">{children}</main>
           <Footer />
         </body>
       </html>

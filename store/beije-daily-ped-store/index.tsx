@@ -24,8 +24,12 @@ export const beijeDailyPedSlice = createSlice({
     updateSuperDailyPed: (state, action: PayloadAction<number>) => {
       state.beije_daily_ped.super_daily_ped += action.payload;
     },
+    resetDailyPed: (state) => {
+      (state.beije_daily_ped.daily_ped = 0),
+        (state.beije_daily_ped.super_daily_ped = 0);
+    },
   },
 });
 
-export const { updateDailyPed, updateSuperDailyPed } =
+export const { updateDailyPed, updateSuperDailyPed,resetDailyPed } =
   beijeDailyPedSlice.actions;
