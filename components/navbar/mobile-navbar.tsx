@@ -1,25 +1,24 @@
-"use client";
+"use client"
 
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
 } from "@/components/ui/popover";
-import { PopoverClose } from "@radix-ui/react-popover";
-import { Menu, ChevronRight, ChevronLeft, ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
-import { Button } from "../../ui/button";
-import { Separator } from "../../ui/separator";
-import Image from "next/image";
 import {
-  cupIcon,
-  customIcon,
-  dailyPadIcon,
-  padIcon,
-  tamponIcon,
+    cupIcon,
+    customIcon,
+    dailyPadIcon,
+    heatingPatchIcon,
+    padIcon,
+    tamponIcon,
 } from "@/images";
-import { heatingPatchIcon } from "@/images";
+import { ArrowRight, ChevronLeft, ChevronRight, Menu } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Button } from "../ui/button";
+import { Separator } from "../ui/separator";
 
 const MobileNavbar = () => {
   const [view, setView] = useState("main");

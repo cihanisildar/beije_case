@@ -1,12 +1,12 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
-import { Trash2 } from "lucide-react";
-import { useDispatch } from "react-redux";
 import { resetDailyPed } from "@/store/beije-daily-ped-store";
 import { resetPed } from "@/store/beije-ped-store";
 import { resetTamponPed } from "@/store/beije-tampon-store";
-import { calculateAndUpdateTotalPrice } from "@/store/total-basket-store";
 import store from "@/store/store";
+import { calculateAndUpdateTotalPrice } from "@/store/total-basket-store";
+import { Trash2 } from "lucide-react";
+import React from "react";
+import { useDispatch } from "react-redux";
 
 interface Package {
   count: number;

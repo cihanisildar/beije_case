@@ -1,13 +1,13 @@
-import React from "react";
 import { Slider } from "@/components/ui/slider";
+import store, { RootState } from "@/store/store";
+import { calculateAndUpdateTotalPrice } from "@/store/total-basket-store";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   updateMiniTampon,
   updateStandartTampon,
   updateSuperTampon,
-} from "../../../store/beije-tampon-store/index"; // Adjust the path accordingly
-import store, { RootState } from "@/store/store";
-import { calculateAndUpdateTotalPrice } from "@/store/total-basket-store";
+} from "../../../store/beije-tampon-store/index";
 
 interface TamponSliderProps {
   type: "mini" | "standart" | "super";
@@ -55,7 +55,7 @@ const TamponSlider: React.FC<TamponSliderProps> = ({ type }) => {
   return (
     <div className="flex flex-col w-full text-md font-normal">
       <div className="flex flex-col gap-5 mt-16">
-        <h1 className="text-lg p-2">
+        <h1 className="btwMdLg:text-lg text-md p-2">
           {type === "standart"
             ? "Mini Tampon"
             : type === "super"

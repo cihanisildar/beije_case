@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { ChevronDown, ChevronUp, RefreshCcw } from "lucide-react";
+import AddToBasket from "@/components/addToBasket";
+import PackageDisplay from "@/components/packetDisplay";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import store, { RootState } from "@/store/store";
-import { useSelector } from "react-redux";
-import PackageDisplay from "@/components/packetDisplay";
-import AddToBasket from "@/components/addToBasket";
-import { FaTurkishLiraSign } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
+import store, { RootState } from "@/store/store";
+import { ChevronDown, ChevronUp, RefreshCcw } from "lucide-react";
+import { useState } from "react";
+import { FaTurkishLiraSign } from "react-icons/fa6";
+import { useSelector } from "react-redux";
 
 const ResponsiveCustomPacket = () => {
   const state = store.getState();

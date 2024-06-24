@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "../ui/button";
+import { americanExpressCard, masterCard, troyCard, visaCard } from "@/images";
+import Image from "next/image";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -8,14 +8,13 @@ import {
   FaSpotify,
   FaTwitter,
 } from "react-icons/fa";
-import "./footer.scss";
+import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
-import Image from "next/image";
-import { americanExpressCard, masterCard, troyCard, visaCard } from "@/images";
+import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div className="w-screen bg-[#262626] flex flex-col btwMdLg:grid btwMdLg:grid-cols-12 px-10 btwMdLg:px-[144px] py-[60px]">
+    <div className="w-full bg-[#262626] flex flex-col btwMdLg:mb-0 mb-20 btwMdLg:grid btwMdLg:grid-cols-12 px-10 btwMdLg:px-[144px] py-[60px] overflow-x-hidden">
       <div className="col-start-1 col-end-5  flex flex-col gap-5  text-[#FFFFFFB2] btwMdLg:col-span-5 md:col-span-3">
         <h1 className="text-white  text-center text-2xl btwMdLg:text-2xl btwMdLg:text-start">
           beije.

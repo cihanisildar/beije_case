@@ -15,6 +15,14 @@ import masterCard from "./public/images/card-mastercard.2bedc059.svg";
 import americanExpressCard from "./public/images/card-american-express.af29b018.svg";
 import visaCard from "./public/images/card-visa.9f651691.svg";
 import packet from "./public/images/packet.png";
+import ourPhilosophy from "./public/images/our-philosophy.jpg";
+import charity from "./public/images/charity.jpg";
+import donationPad from "./public/images/donation-pad.jpg";
+import faq from "./public/images/faq.png";
+import how from "./public/images/how.png";
+import price from "./public/images/price.png";
+import why from "./public/images/why.png";
+import allMaterials from "./public/images/all-materials.png";
 
 //Icons
 import cupIcon from "./public/icons/cup.png";
@@ -42,7 +50,15 @@ export {
   americanExpressCard,
   masterCard,
   visaCard,
-  packet
+  packet,
+  charity,
+  donationPad,
+  ourPhilosophy,
+  allMaterials,
+  faq,
+  how,
+  price,
+  why,
 };
 export {
   cupIcon,

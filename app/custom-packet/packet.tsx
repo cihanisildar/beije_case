@@ -1,12 +1,10 @@
-import { Button } from "@/components/ui/button";
+import AddToBasket from "@/components/addToBasket";
+import PackageDisplay from "@/components/packetDisplay";
 import { packet } from "@/images";
 import store, { RootState } from "@/store/store";
 import { RefreshCcw } from "lucide-react";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import { FaTurkishLiraSign } from "react-icons/fa6";
-import PackageDisplay from "@/components/packetDisplay";
-import AddToBasket  from "@/components/addToBasket";
 
 const CustomPacket = () => {
   const beijePedState = useSelector(

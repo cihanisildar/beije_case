@@ -1,7 +1,6 @@
-import React from "react";
-import { Button } from "./ui/button";
-import { FaTurkishLiraSign } from "react-icons/fa6";
 import store from "@/store/store";
+import { FaTurkishLiraSign } from "react-icons/fa6";
+import { Button } from "./ui/button";
 
 const AddToBasket = () => {
   const state = store.getState();
